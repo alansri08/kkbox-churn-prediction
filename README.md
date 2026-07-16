@@ -3,7 +3,7 @@
 ## Executive Summary
 This project architects an end-to-end churn prediction and customer retention pipeline for KKBox, a leading music streaming service. By processing over 21 million transaction records in a distributed Databricks/PySpark environment, I developed a dual-model approach: a machine learning classifier to identify high-risk users, and a Buy Till You Die (BTYD) survival model to translate that risk into a dollar-value prioritization framework for targeted marketing spend.
 
-Key Outcomes:
+## Key Outcomes:
 
 Business Impact: Identified a "Tier 1" segment representing [Insert Tier 1 Count] high-value users at risk of churn. Based on an average spend of $[Insert Avg Spend], a 10% reduction in churn within this segment protects approximately $[Insert Estimated Revenue] in monthly recurring revenue.
 
