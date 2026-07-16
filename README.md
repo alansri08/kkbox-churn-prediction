@@ -5,7 +5,7 @@ This project architects an end-to-end churn prediction and customer retention pi
 
 ## Key Outcomes:
 
-Business Impact: Identified a "Tier 1" segment representing [Insert Tier 1 Count] high-value users at risk of churn. Based on an average spend of $[Insert Avg Spend], a 10% reduction in churn within this segment protects approximately $[Insert Estimated Revenue] in monthly recurring revenue.
+Business Impact: Identified a "Tier 1" segment representing 202 high-value users. Based on an average spend of $2,402.43, a 10% reduction in churn in this segment protects approximately $48,529.08 in monthly recurring revenue.
 
 Predictive Lift: Achieved an ROC AUC of 0.7357, providing meaningful lift over random targeting for proactive retention intervention.
 
