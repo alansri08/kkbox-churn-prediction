@@ -35,4 +35,4 @@ In the subscription economy, Customer Acquisition Cost (CAC) heavily outweighs r
 * **Machine Learning:** Spark MLlib (Logistic Regression), `lifetimes` (BG/NBD Survival Modeling)
 * **Languages:** Python
 
-Click here to read my Strategic Business Insights
+[Click here to read my Strategic Business Insights](BUSINESS_INSIGHTS.md)
