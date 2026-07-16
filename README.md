@@ -3,10 +3,15 @@
 ## Executive Summary
 This project architects an end-to-end churn prediction and customer retention pipeline for KKBox, a leading music streaming service. By processing over 21 million transaction records in a distributed Databricks/PySpark environment, I developed a dual-model approach: a machine learning classifier to identify high-risk users, and a Buy Till You Die (BTYD) survival model to translate that risk into a dollar-value prioritization framework for targeted marketing spend.
 
-**Key Outcomes:**
-* **Pipeline Efficiency:** Engineered an automated feature-extraction pipeline in PySpark that processed 21M+ subscriber records, cutting data preparation time by 80%.
-* **Predictive Accuracy:** Established a balanced Logistic Regression baseline achieving an ROC AUC of 0.7357, proving transaction frequency and historical spend as primary churn drivers.
-* **Business Strategy:** Segmented the 21M+ user base into actionable risk tiers using BG/NBD modeling, allowing marketing leadership to allocate retention budgets strictly to high-value cohorts.
+Key Outcomes:
+
+Business Impact: Identified a "Tier 1" segment representing [Insert Tier 1 Count] high-value users at risk of churn. Based on an average spend of $[Insert Avg Spend], a 10% reduction in churn within this segment protects approximately $[Insert Estimated Revenue] in monthly recurring revenue.
+
+Predictive Lift: Achieved an ROC AUC of 0.7357, providing meaningful lift over random targeting for proactive retention intervention.
+
+Operational Efficiency: Developed a scalable pipeline that balances production-grade latency with high-fidelity predictive modeling by leveraging representative statistical sampling on 21M+ transaction records.
+<img width="1185" height="384" alt="image" src="https://github.com/user-attachments/assets/b2146996-23fd-49c2-ae73-c5b6c71498cd" />
+
 
 ## The Business Problem
 In the subscription economy, Customer Acquisition Cost (CAC) heavily outweighs retention costs. Identifying *which* users are likely to churn is only half the battle; the business must also know *who is actually worth saving*. A user who spends $5 a year and churns requires a different intervention strategy than a power-user who spends $500. This project bridges the gap between raw predictive analytics and operational product strategy.
