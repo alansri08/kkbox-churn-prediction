@@ -16,10 +16,6 @@ To improve retention and maximize Customer Lifetime Value (CLV), I recommend a *
 * **Revenue Protection**: Focus recovery efforts on Tier 1 to protect top-line revenue before these high-value customers churn completely.
 
 ### 5. Limitations & Future Refinement
-* **Model Performance:** The model achieved an ROC AUC of 0.7357. While this provides meaningful lift over random targeting for proactive retention, future iterations will explore gradient-boosted decision trees and additional behavioral features—such as user skip rates and session length—which are often more predictive of churn.
-* **Calibration:** To optimize for production latency, we addressed class imbalance during training by downsampling the majority class. In a live production deployment, we would recalibrate predicted probabilities to reflect the true population churn rate.
-
-<br>
-
-<img width="1185" height="384" alt="Customer Distribution by Retention Priority" src="https://github.com/user-attachments/assets/57184343-1288-49a9-bac5-ec4aa7578370" />
-*Figure 1: Distribution of customers across risk-based retention tiers. The majority of the subscriber base exhibits low risk, allowing for hyper-targeted retention efforts on the high-value Tier 1 segment.*
+* **Model Calibration:** The current model uses a downsampled training set; before deployment, a recalibration step is required to adjust raw probabilities to the true population churn rate.
+* **Model Iteration:** The current Logistic Regression serves as a baseline. Future iterations will compare this against Gradient Boosted Trees (XGBoost/LightGBM) to capture non-linear behavioral patterns.
+* **Evaluation:** Future work will involve validating BTYD model assumptions against a true holdout period to ensure long-term stability.
