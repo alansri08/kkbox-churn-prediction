@@ -5,12 +5,10 @@ This project architects an end-to-end churn prediction and customer retention pi
 
 ## Key Outcomes:
 
-Business Impact: Identified a "Tier 1" segment representing 202 high-value users. Based on an average spend of $2,402.43, a 10% reduction in churn in this segment protects approximately $48,529.08 in monthly recurring revenue.
+Estimated Financial Impact: My framework identifies a high-risk "Tier 1" cohort of 202 users. Based on an average monthly spend of $2,402.43, even a conservative 10% churn reduction via targeted intervention protects an estimated $48,529.08 in annual recurring revenue (ARR). Calculated based on a representative random sample of 10,000 records.
 
-Predictive Lift: Achieved an ROC AUC of 0.7357, providing meaningful lift over random targeting for proactive retention intervention.
-
-Operational Efficiency: Developed a scalable pipeline that balances production-grade latency with high-fidelity predictive modeling by leveraging representative statistical sampling on 21M+ transaction records.
-<img width="1185" height="384" alt="image" src="https://github.com/user-attachments/assets/b2146996-23fd-49c2-ae73-c5b6c71498cd" />
+Predictive Lift: Achieved an ROC AUC of 0.74, providing meaningful lift over random targeting for proactive retention.
+Data Source: This analysis utilizes the public KKBox Churn Prediction dataset.
 
 
 ## The Business Problem
