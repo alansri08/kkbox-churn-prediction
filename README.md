@@ -1,4 +1,4 @@
-# KKBox Subscriber Churn & Retention Strategy 🎧
+# KKBox Subscriber Churn & Retention Strategy
 
 ## Executive Summary
 This project architects an end-to-end churn prediction and customer retention pipeline for KKBox, a leading music streaming service. By processing over 21 million transaction records in a distributed Databricks/PySpark environment, I developed a dual-model approach: a machine learning classifier to identify high-risk users, and a Buy Till You Die (BTYD) survival model to translate that risk into a dollar-value prioritization framework for targeted marketing spend.
